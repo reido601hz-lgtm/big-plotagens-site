@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#07070a">
   <meta name="description" content="Big Plotagens: envelopamento automotivo, letreiros, pinturas especializadas, adesivação, comunicação visual e personalização sob medida.">
   <meta name="robots" content="index, follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
@@ -55,7 +56,7 @@
         <a href="#servicos">Serviços</a>
         <a href="#catalogos">Catálogos</a>
         <a href="#processo">Como funciona</a>
-        <a class="nav-cta" href="https://wa.me/5527999372568?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20Big%20Plotagens%20e%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
+        <a class="nav-cta" href="https://wa.me/5527999372568?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20Big%20Plotagens%20e%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">Orçamento</a>
       </nav>
     </div>
   </header>
@@ -71,7 +72,7 @@
           <h1 id="hero-title">Sua ideia ganha forma.<br><em>Seu espaço ganha identidade.</em></h1>
           <p>Transformamos veículos, fachadas, ambientes e objetos com envelopamento, letreiros, pintura especializada e soluções de comunicação visual feitas sob medida.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://wa.me/5527999372568?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20Big%20Plotagens%20e%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+            <a class="button button-primary" href="https://wa.me/5527999372568?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20Big%20Plotagens%20e%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
               Pedir orçamento
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -111,16 +112,28 @@
     <section class="section about" id="sobre">
       <div class="container about-grid">
         <div class="about-photo reveal">
-          <div class="photo-frame about-slider" aria-label="Felipe com seus filhos Theo Felipe e Celine">
-            <img class="about-slide is-active" src="assets/felipe-theo.webp" alt="Felipe Lima de Souza com o filho Theo Felipe" width="661" height="879" loading="lazy">
-            <img class="about-slide" src="assets/felipe-celine.webp" alt="Felipe Lima de Souza com a filha Celine" width="1200" height="1600" loading="lazy">
-            <div class="about-slider-dots" aria-hidden="true">
-              <span class="dot is-active"></span>
-              <span class="dot"></span>
+          <div class="photo-frame">
+            <div class="about-slider" data-about-slider aria-roledescription="carrossel" aria-label="Felipe com seus filhos">
+              <figure class="about-slide is-active" data-slide>
+                <img src="assets/felipe-theo.webp" alt="Felipe com o filho Theo Felipe" width="661" height="879" loading="lazy" decoding="async">
+                <figcaption>Felipe com Theo Felipe</figcaption>
+              </figure>
+              <figure class="about-slide" data-slide aria-hidden="true">
+                <img src="assets/felipe-celine.webp" alt="Felipe com a filha Celine" width="1200" height="1600" loading="lazy" decoding="async">
+                <figcaption>Felipe com Celine</figcaption>
+              </figure>
+
+              <button class="slider-control slider-control-prev" type="button" data-slider-prev aria-label="Mostrar foto anterior">‹</button>
+              <button class="slider-control slider-control-next" type="button" data-slider-next aria-label="Mostrar próxima foto">›</button>
+
+              <div class="about-slider-dots" aria-label="Selecionar foto">
+                <button class="dot is-active" type="button" data-slider-dot="0" aria-label="Mostrar foto com Theo Felipe" aria-current="true"></button>
+                <button class="dot" type="button" data-slider-dot="1" aria-label="Mostrar foto com Celine"></button>
+              </div>
             </div>
           </div>
           <div class="photo-note">
-            <strong>Felipe Lima de Souza</strong>
+            <strong>Felipe</strong>
             <span>Pai do Theo Felipe e da Celine — o rosto por trás da Big Plotagens</span>
           </div>
         </div>
@@ -256,35 +269,35 @@
         </div>
 
         <div class="catalog-grid">
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1iZ69kOBwb7F8AuGLCr1aOPmA5e_jnlnk/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1iZ69kOBwb7F8AuGLCr1aOPmA5e_jnlnk/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/marmore.webp" alt="Catálogo de estampas marmorizadas" loading="lazy">
             <span class="catalog-overlay"><strong>Mármore</strong><small>Abrir catálogo</small></span>
           </a>
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1SfnrAN5bCAGUsu_Cv0Q1_fhVOWF7qh0J/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1SfnrAN5bCAGUsu_Cv0Q1_fhVOWF7qh0J/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/cimento.webp" alt="Catálogo de texturas de cimento queimado" loading="lazy">
             <span class="catalog-overlay"><strong>Cimento queimado</strong><small>Abrir catálogo</small></span>
           </a>
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/14dADTiDFTf-Ai6FTvVqysT8W889zGc_8/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/14dADTiDFTf-Ai6FTvVqysT8W889zGc_8/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/tijolos.webp" alt="Catálogo de estampas de tijolos" loading="lazy">
             <span class="catalog-overlay"><strong>Tijolos</strong><small>Abrir catálogo</small></span>
           </a>
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1S9TQMLQwvMNkyI5Ah-eBHqt90eTY_DHl/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1S9TQMLQwvMNkyI5Ah-eBHqt90eTY_DHl/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/ripado.webp" alt="Catálogo de texturas de ripado" loading="lazy">
             <span class="catalog-overlay"><strong>Ripado</strong><small>Abrir catálogo</small></span>
           </a>
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1IQTp2BSDQgjEcjPLnJFxGr4YVPDAkEju/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1IQTp2BSDQgjEcjPLnJFxGr4YVPDAkEju/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/3d.webp" alt="Catálogo de estampas em efeito 3D" loading="lazy">
             <span class="catalog-overlay"><strong>Parede 3D</strong><small>Abrir catálogo</small></span>
           </a>
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1_yNFT0JZ2EUDmTXz7YXixwjY6jP-jiuq/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1_yNFT0JZ2EUDmTXz7YXixwjY6jP-jiuq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/floral.webp" alt="Catálogo de estampas florais" loading="lazy">
             <span class="catalog-overlay"><strong>Floral</strong><small>Abrir catálogo</small></span>
           </a>
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1Id4q6LASSAUuEF7oWcSfrcHRQSs5bnPF/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1Id4q6LASSAUuEF7oWcSfrcHRQSs5bnPF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/jardim-vertical.webp" alt="Catálogo de estampas de jardim vertical" loading="lazy">
             <span class="catalog-overlay"><strong>Jardim vertical</strong><small>Abrir catálogo</small></span>
           </a>
-          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1Un_1jhHy1waVcjNk5Rp6fc4_u1ydZAwH/view?usp=sharing" target="_blank" rel="noopener">
+          <a class="catalog-card reveal" href="https://drive.google.com/file/d/1Un_1jhHy1waVcjNk5Rp6fc4_u1ydZAwH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <img src="assets/portfolio/paisagem.webp" alt="Catálogo de estampas de paisagens" loading="lazy">
             <span class="catalog-overlay"><strong>Paisagens</strong><small>Abrir catálogo</small></span>
           </a>
@@ -292,7 +305,7 @@
 
         <div class="catalog-more reveal">
           <p>Há outras opções para geladeiras, infantil, mapas, azulejos, pedras, box e mais.</p>
-          <a class="text-link" href="https://linktr.ee/bigplotagens" target="_blank" rel="noopener">Ver todos os catálogos <span>↗</span></a>
+          <a class="text-link" href="https://linktr.ee/bigplotagens" target="_blank" rel="noopener noreferrer">Ver todos os catálogos <span>↗</span></a>
         </div>
       </div>
     </section>
@@ -334,8 +347,8 @@
           <h2>Peça um orçamento pelo WhatsApp.</h2>
           <p>Preencha os campos abaixo. Ao enviar, sua mensagem será aberta diretamente no WhatsApp da Big Plotagens.</p>
           <div class="contact-links">
-            <a href="https://www.instagram.com/bigplotagens/" target="_blank" rel="noopener">Instagram <span>@bigplotagens</span></a>
-            <a href="https://linktr.ee/bigplotagens" target="_blank" rel="noopener">Catálogos <span>Linktree oficial</span></a>
+            <a href="https://www.instagram.com/bigplotagens/" target="_blank" rel="noopener noreferrer">Instagram <span>@bigplotagens</span></a>
+            <a href="https://linktr.ee/bigplotagens" target="_blank" rel="noopener noreferrer">Catálogos <span>Linktree oficial</span></a>
           </div>
         </div>
 
@@ -384,9 +397,9 @@
       </div>
       <div>
         <strong>Contato</strong>
-        <a href="https://wa.me/5527999372568" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://www.instagram.com/bigplotagens/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://linktr.ee/bigplotagens" target="_blank" rel="noopener">Linktree</a>
+        <a href="https://wa.me/5527999372568" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.instagram.com/bigplotagens/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://linktr.ee/bigplotagens" target="_blank" rel="noopener noreferrer">Linktree</a>
       </div>
     </div>
     <div class="container developer-credit" aria-label="Créditos de desenvolvimento do site">
@@ -395,8 +408,8 @@
         <p><strong>Site desenvolvido por Daniel Rissi.</strong> Gostou deste projeto? Solicite o desenvolvimento de um site profissional como este.</p>
       </div>
       <div class="developer-links">
-        <a href="https://www.instagram.com/giteasy.tech/" target="_blank" rel="noopener" aria-label="Instagram da Git Easy">@giteasy.tech</a>
-        <a href="https://wa.me/5527995740697?text=Ol%C3%A1%2C%20Daniel!%20Vi%20o%20site%20da%20Big%20Plotagens%20e%20gostaria%20de%20solicitar%20um%20site%20profissional." target="_blank" rel="noopener" aria-label="Falar com Daniel Rissi pelo WhatsApp">(27) 99574-0697</a>
+        <a href="https://www.instagram.com/giteasy.tech/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Git Easy">@giteasy.tech</a>
+        <a href="https://wa.me/5527995740697?text=Ol%C3%A1%2C%20Daniel!%20Vi%20o%20site%20da%20Big%20Plotagens%20e%20gostaria%20de%20solicitar%20um%20site%20profissional." target="_blank" rel="noopener noreferrer" aria-label="Falar com Daniel Rissi pelo WhatsApp">(27) 99574-0697</a>
       </div>
     </div>
 
@@ -406,10 +419,10 @@
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/5527999372568?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20Big%20Plotagens." target="_blank" rel="noopener" aria-label="Falar com a Big Plotagens no WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/5527999372568?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20Big%20Plotagens." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Big Plotagens no WhatsApp">
     <svg aria-hidden="true" viewBox="0 0 32 32"><path d="M16 3a12.7 12.7 0 0 0-11 19.1L3.4 28.6l6.7-1.6A12.8 12.8 0 1 0 16 3Zm0 23.3c-2 0-3.8-.5-5.4-1.5l-.4-.2-4 .9 1-3.8-.3-.4A10.5 10.5 0 1 1 16 26.3Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 3 0 1.8 1.3 3.5 1.5 3.8.2.2 2.6 4 6.4 5.6.9.4 1.6.6 2.1.8.9.3 1.7.2 2.4.1.7-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.5Z"/></svg>
   </a>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
