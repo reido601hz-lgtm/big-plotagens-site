@@ -4,7 +4,7 @@ Site institucional estático, responsivo e sem mensalidade obrigatória. Pode se
 
 ## Conteúdo já configurado
 
-- Logo e foto de apresentação.
+- Logo, foto de apresentação e galeria de trabalho recente.
 - WhatsApp: `+55 27 99937-2568`.
 - Instagram: `@bigplotagens`.
 - Linktree e catálogos do Google Drive.
@@ -13,7 +13,7 @@ Site institucional estático, responsivo e sem mensalidade obrigatória. Pode se
 
 ## Antes de publicar
 
-1. Confirme com Felipe se a foto com o filho pode ser usada publicamente. Caso não possa, troque o arquivo `assets/felipe-filho.png` por outra foto mantendo o mesmo nome.
+1. Confirme com Felipe se a foto com a filha e as imagens do envelopamento automotivo podem ser usadas publicamente. A foto principal está em `assets/felipe-celine.webp` e o trabalho recente está em `assets/trabalhos/`.
 2. Revise a lista real de serviços, a região de atendimento, os prazos e as formas de pagamento.
 3. Confirme se o número do WhatsApp e os links continuam corretos.
 4. Substitua textos genéricos por informações reais assim que Felipe responder ao briefing.
@@ -40,10 +40,17 @@ Site institucional estático, responsivo e sem mensalidade obrigatória. Pode se
 - `index.html`: conteúdo e links.
 - `styles.css`: cores, layout e responsividade.
 - `script.js`: menu, animações e formulário do WhatsApp.
-- `assets/`: logo, foto e capas dos catálogos.
+- `assets/`: logo, foto, galeria de trabalhos e capas dos catálogos.
 
 ## Alterações rápidas
 
 Para trocar o WhatsApp, pesquise no projeto por `5527999372568` e substitua pelo número completo com código do país e DDD, somente números.
 
 Para trocar o Instagram, pesquise por `bigplotagens` e atualize o usuário e os links.
+
+## Atualização atual
+
+- Inclusão dos serviços de envelopamento automotivo, letreiros e fachadas, pinturas especializadas e comunicação visual.
+- Inclusão de um projeto recente de envelopamento automotivo com quatro imagens.
+- Atualização da apresentação de Felipe como pai de Theo Felipe e Celine.
+- Inclusão do reconhecimento profissional recebido em duas ocasiões, sem citar a empresa.
